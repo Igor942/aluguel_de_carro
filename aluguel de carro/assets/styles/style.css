@@ -1,0 +1,369 @@
+/* Import de fontes do Google */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+/* Reset de margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo de fonte padrão para o corpo do documento */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilo de link padrão */
+a {
+    color: #747373;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Estilo de link ao passar o mouse */
+a:hover {
+    opacity: 0.7;
+}
+
+/* Estilo para o logotipo */
+.logo {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Estilo para a barra de navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 14vh;
+    background-color: #ffff;
+}
+
+/* Estilo para a lista de navegação */
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+/* Estilo para os itens da lista de navegação */
+.nav-list li {
+    letter-spacing: 2px;
+    margin-left: 7vh;
+}
+
+/* Estilo para o menu mobile */
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+/* Estilo para as linhas do menu mobile */
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #5c5c5c;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+/* Estilo para o banner */
+.banner {
+    background-image: linear-gradient(to bottom, #0058aa, #6ab7ff);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 86vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para imagens no banner */
+.banner img {
+    max-width: 100%;
+}
+
+/* Estilo para a caixa de texto */
+.textbox {
+    margin: 5% 0% 0% 0%;
+    width: auto;
+    height: auto;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Estilo para o título do banner */
+.textbox h1 {
+    font-size: 8vh;
+    font-weight: 800;
+}
+
+/* Estilo para o subtítulo do banner */
+.textbox h2 {
+    font-size: 2.7vh;
+    font-weight: 300;
+    max-width: 600px;
+    text-align: left !important;
+}
+
+/* Estilo para a caixa de conteúdo de texto */
+.card-dad {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #5c5c5c;
+}
+
+/* Estilo para o conteúdo de texto */
+.text-content {
+    max-width: 800px;
+    margin: 10vh 0% 10vh 0%;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Estilo para parágrafos no conteúdo de texto */
+.text-content p {
+    margin: 2% 0% 2% 0%;
+}
+
+/* Estilo para títulos no conteúdo de texto */
+.text-content h2 {
+    font-weight: 700;
+    font-size: 27px;
+}
+
+/* Estilo para a caixa de cartões */
+.card-box {
+    max-width: 1100px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    display: flex;
+}
+
+/* Estilo para os cartões */
+.card {
+    width: 250px;
+    height: 500px;
+    background-image: linear-gradient(to bottom, #b6dcff, #5aaefc);
+    border-radius: 20px;
+    transition: 0.1s;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Estilo para a descrição nos cartões */
+.descripition {
+    position: absolute;
+    margin-bottom: 400px;
+}
+
+/* Estilo para parágrafos na descrição */
+.descripition p {
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+}
+
+/* Estilo para títulos na descrição */
+.descripition h3 {
+    font-weight: 300;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+/* Estilo para botões de aluguel */
+.alugar-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007acc00;
+    border: 1px solid white;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    margin-top: 350px;
+}
+
+/* Estilo para o botão de aluguel ao passar o mouse */
+.alugar-button:hover {
+    background-color: #0084ff9f;
+}
+
+/* Estilo para imagens de carros */
+.car-1 {
+    max-width: 118%;
+    padding-bottom: 30px;
+    padding-right: 5%;
+}
+
+.car-2 {
+    max-width: 112%;
+}
+
+.car-3 {
+    max-width: 192%;
+    margin-bottom: 30px;
+}
+
+
+/* Estilo para dispositivos com largura máxima de 1000px */
+@media (max-width: 1000px) {
+    /* Ajustes nos estilos dos carros */
+    .car-1 {
+        max-width: 108%;
+        padding-bottom: 30px;
+        padding-right: 5%;
+    }
+
+    .car-2 {
+        max-width: 102%;
+    }
+
+    .car-3 {
+        max-width: 182%;
+        margin-bottom: 30px;
+    }
+
+    /* Ajustes no estilo do conteúdo de texto */
+    .text-content {
+        margin: 20vh 0% 10vh 0%;
+        max-width: 300px;
+        padding: 0px;
+        background-color: #fff;
+    }
+
+    /* Ajustes no estilo dos parágrafos do conteúdo de texto */
+    .text-content p {
+        margin: 4% 0% 4% 0%;
+    }
+
+    /* Ajustes no estilo dos títulos do conteúdo de texto */
+    .text-content h2 {
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    /* Ajustes no estilo da caixa de cartões */
+    .card-box {
+        flex-direction: column;
+    }
+
+    /* Ajustes no estilo do cabeçalho */
+    header {
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    /* Ajustes no estilo do banner */
+    .banner {
+        position: relative;
+        height: 86vh;
+        top: 14vh;
+    }
+
+    /* Ajustes no estilo da imagem do banner */
+    .banner img {
+        max-width: 100%;
+    }
+
+    /* Ajustes no estilo da caixa de texto do banner */
+    .textbox {
+        width: auto;
+        height: auto;
+        max-width: 300px;
+        color: #ffffff;
+        text-align: left;
+        position: relative;
+    }
+
+    /* Ajustes no estilo do título do banner */
+    .textbox h1 {
+        font-size: 7vh;
+        font-weight: 800;
+    }
+
+    /* Ajustes no estilo do subtítulo do banner */
+    .textbox h2 {
+        font-size: 2.5vh;
+        font-weight: 300;
+        max-width: 600px;
+        margin-bottom: 10%;
+    }
+
+    /* Ajustes no estilo da lista de navegação */
+    .nav-list {
+        position: fixed;
+        top: 13vh;
+        right: 0;
+        width: 50vw;
+        height: 88vh;
+        background: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        z-index: 1000;
+    }
+
+    /* Ajustes no estilo dos itens da lista de navegação */
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    /* Exibir o menu mobile */
+    .mobile-menu {
+        display: block;
+    }
+}
+
+/* Animação de fade para os itens da lista de navegação */
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animação para o ícone do menu mobile quando ativo */
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+/* Estilo para o rodapé */
+footer {
+    background: #f3f3f3;
+    color: #797979;
+    padding: 50px 0;
+    text-align: center;
+}
